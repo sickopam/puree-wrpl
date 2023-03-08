@@ -1,5 +1,5 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["fullTextSearch"]
 }
 
@@ -9,20 +9,19 @@ datasource db {
 }
 
 model Account {
-  id                 String  @id @default(cuid())
-  userId             String
-  type               String
-  provider           String
-  providerAccountId  String
-  refresh_token      String?  //@db.Text
-  access_token       String?  //@db.Text
-  expires_at         Int?
-  token_type         String?
-  scope              String?
-  id_token           String?  //@db.Text
-  session_state      String?
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
@@ -54,24 +53,120 @@ model VerificationToken {
 }
 
 model merchant {
-  merchant_id String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  name        String
-  category    String
-  address     String
-  merchant_email String @unique
+  merchant_id       String        @id
+  merchant_name     String
+  category          String
+  merchant_email    String        @unique
   merchant_password String
+  address_id        String        @unique
+  balance_id        String        @unique
+  item              item?
+  address           address       @relation(fields: [address_id], references: [address_id])
+  ewallet           ewallet       @relation(fields: [balance_id], references: [balance_id])
+  order_detail      order_detail?
+  ratings           ratings?
 }
 
 model driver {
-  driver_id      String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  name           String
-  phoneNumber    Int      @unique
-  driver_email          String   @unique
+  driver_id       String        @id
+  driver_name     String
+  phoneNumber     Int           @unique
+  driver_email    String        @unique
   driver_password String
-  numberPlate    String   @unique
-  vehicleBrand   String
-  vehicleColor   String
-  createdAt      DateTime @default(now())
-  profilePicture String?
-  session_state  String?
+  numberPlate     String        @unique
+  vehicleBrand    String
+  vehicleColor    String
+  createdAt       DateTime      @default(now())
+  profilePicture  String?
+  session_state   String?
+  balance_id      String        @unique
+  ewallet         ewallet       @relation(fields: [balance_id], references: [balance_id])
+  order_detail    order_detail?
+}
+
+model address {
+  address_id       String            @id
+  address_line_1   String
+  address_line_2   String
+  subdistrict      String
+  city             String
+  province         String
+  country          String
+  customer_address customer_address?
+  merchant         merchant?
+}
+
+model customer {
+  customer_id      String            @id
+  customer_name    String
+  email            String            @unique
+  phone_number     Int               @unique
+  createdAt        DateTime          @default(now())
+  balance_id       String            @unique
+  ewallet          ewallet           @relation(fields: [balance_id], references: [balance_id])
+  customer_address customer_address?
+  order_detail     order_detail?
+}
+
+model customer_address {
+  customer_addr_id String        @id
+  customer_id      String        @unique
+  address_id       String        @unique
+  address          address       @relation(fields: [address_id], references: [address_id])
+  customer         customer      @relation(fields: [customer_id], references: [customer_id])
+  order_detail     order_detail?
+}
+
+model ewallet {
+  balance_id String    @id
+  balance    Int
+  customer   customer?
+  driver     driver?
+  merchant   merchant?
+}
+
+model item {
+  item_id      String        @id
+  item_name    String
+  price        Int
+  category     String
+  merchant_id  String        @unique
+  merchant     merchant      @relation(fields: [merchant_id], references: [merchant_id])
+  item_ordered item_ordered?
+}
+
+model item_ordered {
+  itemOrdered_id String       @id
+  quantity       Int
+  item_id        String       @unique
+  order_id       String       @unique
+  order_detail   order_detail @relation(fields: [itemOrdered_id], references: [order_id])
+  item           item         @relation(fields: [item_id], references: [item_id])
+}
+
+model order_detail {
+  order_id         String           @id
+  total_price      Int
+  delivery_fee     Int
+  order_datetime   DateTime
+  order_end        DateTime?        @db.Timestamptz(3)
+  status           Boolean
+  customer_id      String           @unique
+  driver_id        String           @unique
+  customer_addr_id String           @unique
+  merchant_id      String           @unique
+  item_ordered     item_ordered?
+  customer_address customer_address @relation(fields: [customer_addr_id], references: [customer_addr_id])
+  customer         customer         @relation(fields: [customer_id], references: [customer_id])
+  driver           driver           @relation(fields: [driver_id], references: [driver_id])
+  merchant         merchant         @relation(fields: [merchant_id], references: [merchant_id])
+  ratings          ratings?
+}
+
+model ratings {
+  rating_id    String       @id
+  order_id     String       @unique
+  merchant_id  String       @unique
+  merchant     merchant     @relation(fields: [merchant_id], references: [merchant_id])
+  order_detail order_detail @relation(fields: [order_id], references: [order_id])
 }
