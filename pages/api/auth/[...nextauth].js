@@ -35,8 +35,8 @@ export const authOptions = {
         async authorize(credentials, req){
             const dbUser = await prisma.user.findUnique({
                 where: {
-                    merchant_email: credentials.email,
-                    merchant_password: credentials.password
+                    email: credentials.email,
+                    password: credentials.password
                 }
             })
             if(dbUser) {
