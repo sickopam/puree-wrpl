@@ -4,9 +4,9 @@ import Image from 'next/image'
 import '.../styles/merchant_setup_dua.css'
 
 import CornerLogo from '../images/corner-logo.png'
-import Jar from '../images/jar.png'
+import Driver from '../images/driver.png'
 
-export default function merchant_setup_dua() {
+export default function driver_setup_dua() {
   return (
     <div>
       <div classname='h-screen bg-[#999999]'>
@@ -14,8 +14,8 @@ export default function merchant_setup_dua() {
           <Image id='drive' src={Driver}/>
       </div>
       <div id='box'>
-        <h1 id='start'>Start it up!</h1>
-          <p id='account-info'>Provide your account information</p>
+        <h1 id='start'>Tell us about yourself!</h1>
+          <p id='account-info'>Provide your personal information</p>
             <div id='bottom-container'>
                 <p className='account-fill'>Full Name</p>
                     <input type='text' className='fill-example'>James</input>
