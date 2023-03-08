@@ -10,32 +10,33 @@ export default function merchant_setup() {
   return (
     <div>
       <div classname='h-screen bg-[#999999]'>
-          <Image id='corner-box' src={CornerLogo}/>
+          <Image id='corner-logo' src={CornerLogo}/>
           <Image id='jar' src={Jar}/>
       </div>
       <div>
         <h1 id='start'>Start it up!</h1>
           <p id='account-info'>Provide your account information</p>
             <div id='bottom-container'>
+
               <p className='account-fill'>Email</p>
-                <p className='fill-example'>jane_d@gmail.com</p>
+                <input type='email' className='fill-example'>jane_d@gmail.com</input>
                   <div className='line'/>
 
               <p className='account-fill'>Phone Number</p>
-                <p className='fill-example'>+62877889900</p>
+                <input type='tel' className='fill-example'>+62877889900</input>
                   <div className='line'/>
 
               <p className='account-fill'>Password</p>
-                <p className='fill-example'>********</p>
+                <input type='password' className='fill-example'>********</input>
                   <div className='line'/>
                   
               <p className='account-fill'>Confirm Password</p>
-                <p className='fill-example'>********</p>
+                <input type='password' className='fill-example'>********</input>
                     <div className='line'/>
             </div>
-            <div id='next-button'>
+            <button id='next-button'>
               <p id='next'>Next</p>
-            </div>
+            </button>
       </div>
     </div>
   )
