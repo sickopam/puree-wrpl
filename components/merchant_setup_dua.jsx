@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import 'styles/merchant_setup.css'
+import 'styles/merchant_setup_dua.css'
 
 import CornerLogo from '../images/corner-logo.png'
 import Jar from '../images/jar.png'
@@ -13,7 +13,7 @@ export default function merchant_setup_dua() {
           <Image id='corner-logo' src={CornerLogo}/>
           <Image id='jar' src={Jar}/>
       </div>
-      <div>
+      <div id='box'>
         <h1 id='start'>Start it up!</h1>
           <p id='account-info'>Provide your account information</p>
             <div id='bottom-container'>
@@ -46,7 +46,7 @@ export default function merchant_setup_dua() {
                 <button id='previous-button'>
                     <p id='previous'>Previous</p>
                 </button>
-                
+
                 <button id='next-button'>
                     <p id='next'>Next</p>
                 </button>

@@ -4,14 +4,14 @@
     height: 83.22px;
 }
 
-#jar {
+#driver {
     padding-left: 78px;
     z-index: -2;
     position: absolute; 
-    width: 563px;
-    height: 281px;
-    left: 0px;
-    top: 78px;
+    width: 569px;
+    height: 493px;
+    left: -34px;
+    top: 0px;
 }
 
 #box {
@@ -28,7 +28,7 @@
     font-size: 24px;
     text-align: center;
     color: #F5CE00;
-    padding: 45px 56px 4px 22px;
+    padding: 45px 223px 4px 22px;
 }
 
 #account-info {
@@ -73,45 +73,21 @@
 }
 
 #bottom-container {
-    padding: 0px 21px 24px 22px;
+    padding: 0px 21px 29px 22px;
     position: absolute;
-}
-
-#previous-button {
-    box-sizing: border-box;
-    position: absolute;
-    width: 124px;
-    height: 36px;
-    left: 56px;
-    top: 744px;
-    border: 1px solid #F5CE00;
-    filter: drop-shadow(0px 2px 1px rgba(36, 36, 36, 0.15));
-    border-radius: 20px;
-    padding: 0px 16px 30px 56px;
-}
-
-#previous {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #F5CE00;
 }
 
 #next-button {
-    padding: 0px 55px 30px 0px;
     position: absolute;
-    width: 124px;
+    width: 190px;
     height: 36px;
-    left: 196px;
+    left: 93px;
     top: 744px;
     background: #F5CE00;
     box-shadow: 0px 2px 1px rgba(36, 36, 36, 0.15);
     border-radius: 20px;
+    align-items: center;
+    padding: 0px 92px 30px 93px;
 }
 
 #next {

@@ -4,16 +4,18 @@ import Image from 'next/image'
 import '../styles/merchant_setup.css'
 
 import CornerLogo from '../images/corner-logo.png'
-import Jar from '../images/jar.png'
+import Driver from '../images/driver.png'
 
-export default function merchant_setup() {
+
+export default function driver_setup_satu() {
   return (
     <div>
-      <div classname='h-screen bg-[#999999]'>
+        <div classname='h-screen bg-[#999999]'>
           <Image id='corner-logo' src={CornerLogo}/>
-          <Image id='jar' src={Jar}/>
-      </div>
-      <div id='box'>
+          <Image id='driver' src={Driver}/>
+        </div>
+
+    <div>
         <h1 id='start'>Start it up!</h1>
           <p id='account-info'>Provide your account information</p>
             <div id='bottom-container'>
@@ -37,7 +39,7 @@ export default function merchant_setup() {
             <button id='next-button'>
               <p id='next'>Next</p>
             </button>
-      </div>
+        </div>
     </div>
   )
 }
