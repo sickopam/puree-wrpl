@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+// import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-import Logland from '@/components/login_landing'
-import Merch from '@/components/merchant_log'
+import Logland from '@/pages/login_landing'
+import Merch from '@/pages/merchant_log'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Logland/>
-      <Merch/>
+      {/* <Merch/> */}
     </>
   )
 }
