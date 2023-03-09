@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-import '../styles/merchant_homescreen.css'
+// import '../styles/merchant_homescreen.css'
 
-export default function merchant_homescreen() {
+export default function MerchHome() {
   return (
     <div>
       <div id='top-container'>
