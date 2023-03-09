@@ -20,7 +20,7 @@ export default function driver_landing() {
                     <Image className='h-1/2' src={Logo}></Image>
                 </div>
                 <div className='grid space-y-5 justify-center'>
-                    <Link href='/login_landing'>
+                    <Link href='/driver_setup_satu'>
                         <button className='button grid place-items-center '>
                             <h1 className='font-bold text-white'>Register with email</h1>
                         </button>
