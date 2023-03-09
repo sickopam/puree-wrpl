@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Cloud from '../images/cloud.png'
 import Cloud2 from '../images/cloud2.png'
@@ -15,12 +16,14 @@ export default function Merch() {
         <div className='flex justify-center'>
             <div className=''>
                 <div className='flex justify-center'>
-                    <Image className='' src={Logo}></Image>
+                    <Image className='h-1/2' src={Logo}></Image>
                 </div>
                 <div className='grid space-y-5'>
-                    <button className='button grid place-items-center'>
-                        <h1 className='font-bold text-white'>Register with email</h1>
-                    </button>
+                    <Link href='/login_landing'>
+                        <button className='button grid place-items-center'>
+                            <h1 className='font-bold text-white'>Register with email</h1>
+                        </button>
+                    </Link>
                     <button className='button2 grid place-items-center'>
                         <h1 className='font-bold text-[#666666]'>Sign in with Google</h1>
                     </button>
