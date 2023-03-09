@@ -43,7 +43,7 @@ export default function DriverSet1() {
                     <p id='previous'>Previous</p>
                   </button>
                 </Link>
-                <Link href='/driver_setup_satu'>
+                <Link href='/driver_setup_tiga'>
                   <button id='next-button-sm' className='grid place-items-center'>
                     <p id='next'>Next</p>
                   </button>

@@ -67,11 +67,6 @@ export default function driver_setup_dua() {
                 </div>
             </div>
                 <div className='w-full flex justify-evenly'>
-                <Link href='/driver_setup_dua'>
-                  <button id='previous-button-sm' className='grid place-items-center'>
-                    <p id='previous'>Previous</p>
-                  </button>
-                </Link>
                 <Link href='/driver_setup_empat'>
                   <button id='next-button-sm' className='grid place-items-center'>
                     <p id='next'>Next</p>
