@@ -37,9 +37,10 @@ export default function DriverSet1() {
                 <input type='password' className='fill-example'/>
                     {/* <div className='line'/> */}
               <div className='w-full flex justify-evenly'>
+
                 <Link href='/driver_setup_satu'>
-                  <button id='next-button-sm' className='grid place-items-center'>
-                    <p id='next'>Next</p>
+                  <button id='previous-button-sm' className='grid place-items-center'>
+                    <p id='previous'>Previous</p>
                   </button>
                 </Link>
                 <Link href='/driver_setup_satu'>
@@ -47,6 +48,7 @@ export default function DriverSet1() {
                     <p id='next'>Next</p>
                   </button>
                 </Link>
+                
               </div>
             </div>
         </div>
