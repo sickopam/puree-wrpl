@@ -3,8 +3,11 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-import Logland from '@/components/login_landing'
-import Merch from '@/components/merchant_log'
+import Logland from '@/pages/login_landing'
+import Merch from '@/pages/merchant_log'
+import MerchSetup from '@/components/merchant_setup'
+import MerchHome from '@/components/merchant_homescreen'
+import DriverSet1 from '@/pages/driver_setup_satu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +20,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Logland/>
-      <Merch/>
+      {/* <MerchSetup/> */}
+      <DriverSet1/>
+      {/* <MerchHome/> */}
+      {/* <Logland/> */}
+      {/* <Merch/> */}
     </>
   )
 }
