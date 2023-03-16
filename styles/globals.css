@@ -453,6 +453,10 @@ input:focus, select:focus {
   color: #FFFFFF;
 }
 
+.tshadow {
+  box-shadow: 0px 0px 12px -5px;
+}
+
 #add-photo {
   font-family: 'Poppins';
   font-style: normal;

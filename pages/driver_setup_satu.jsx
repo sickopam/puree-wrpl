@@ -36,7 +36,7 @@ export default function DriverSet1() {
                 <p className='account-fill'>Confirm Password</p>
                   <input type='password' required/>
                       {/* <div className='line'/> */}
-                <div className='w-full flex justify-center'>
+                <div className='h-full flex justify-center'>
                   <Link href='/driver_setup_dua'>
                     <button id='next-button' className='grid place-items-center'>
                       <p id='next'>Next</p>

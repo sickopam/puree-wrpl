@@ -9,7 +9,7 @@ import Bell from '../images/navbar/bell.svg'
 
 const Navbar = () => {
   return (
-    <div className='p-2 flex justify-evenly h-fit'>
+    <div className='py-7 flex justify-evenly h-fit tshadow'>
         <Image src={Home}/>
         <Image src={Bell}/>
         <Image src={Message}/>
