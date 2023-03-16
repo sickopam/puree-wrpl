@@ -13,7 +13,7 @@ export default function DriverSet1() {
     <div className='bg-[#b0b0b0]'>
         <div className='inline-flex container'>
           <Image id='corner-logo' className='h-fit' src={CornerLogo}/>
-          <Image id='driver' src={Driver}/>
+          <Image id='driver' className='brightness-75' src={Driver}/>
         </div>
 
     <div id='box' className='p-8 sticky'>
@@ -22,19 +22,19 @@ export default function DriverSet1() {
             <div id='' className='space-y-4'>
 
               <p className='account-fill'>First Name</p>
-                <input type='email' className='fill-example'/>
+                <input required type='email' className='fill-example'/>
                   {/* <div className='line'/> */}
 
               <p className='account-fill'>Last Name</p>
-                <input type='tel' className='fill-example'/>
+                <input required type='tel' className='fill-example'/>
                   {/* <div className='line'/> */}
 
               <p className='account-fill'>Gender</p>
-                <input type='password' className='fill-example'/>
+                <input required type='password' className='fill-example'/>
                   {/* <div className='line'/> */}
                   
               <p className='account-fill'>Birthday</p>
-                <input type='password' className='fill-example'/>
+                <input required type='password' className='fill-example'/>
                     {/* <div className='line'/> */}
               <div className='w-full flex justify-evenly'>
 

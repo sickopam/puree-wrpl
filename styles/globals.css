@@ -3,6 +3,17 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+div {
+  font-family: 'Poppins', sans-serif;
+}
+
+.road {
+  height: 100vh;
+  align-self: center;
+  background-image: url('../images/road.png');
+  background-repeat: no-repeat;
+}
+
 .button {
   height: 2.5rem;
   width: 18rem;
@@ -177,6 +188,15 @@
 
 #box {
   background: #FFFFFF;
+  height: 65vh;
+  box-shadow: 7.42332px 7.42332px 20px rgba(184, 192, 198, 0.8), -5px -5px 14px rgba(184, 192, 198, 0.8), 7.42332px 7.42332px 7px rgba(184, 192, 198, 0.15);
+  border-radius: 24px 24px 0px 0px;
+  z-index: 1;
+}
+
+#box2 {
+  background: #FFFFFF;
+  height: 70vh;
   box-shadow: 7.42332px 7.42332px 20px rgba(184, 192, 198, 0.8), -5px -5px 14px rgba(184, 192, 198, 0.8), 7.42332px 7.42332px 7px rgba(184, 192, 198, 0.15);
   border-radius: 24px 24px 0px 0px;
   z-index: 1;
@@ -202,18 +222,7 @@
 }*/
 
 
-.account-fill {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  align-items: center;
-  display: flex;
-  /* padding: 33px 308px 8px 22px; */
-  color: #333333;
-}
-
-.fill-example::placeholder {
+/* .fill-example::placeholder {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -221,7 +230,7 @@
   line-height: 21px;
   text-align: center;
   color: #666666;
-}
+} */
 
 .line {
   box-sizing: border-box;
@@ -311,12 +320,13 @@
 
 #driver {
   /* padding-left: 78px; */
-  padding-top: 1rem;
+  padding-top: 5rem;
   z-index: 1;
+  /* top: 25rem; */
   position: sticky; 
-  width: 75%;
+  width: 55%;
+  scale: 175%;
   height: 100%;
-  right: 0;
 }
 
 #box {
@@ -357,6 +367,7 @@
 
 .container {
   /* height: fit-content; */
+  /* width: fit-content; */
   display: flex;
   position: sticky;
   top: 0;
@@ -365,11 +376,27 @@
 input {
   width: 100%;
   border-radius: 0;
-  padding: 0px 0;
+  padding: 0px 8px 0px 8px;
   border-bottom: 1px solid #999999;
+  @apply text-sm text-[#666666]
 }
 
-input:focus {
+select {
+  background: url('../images/chevron-down.svg') no-repeat 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 4px 8px 4px 8px;
+  border-bottom: 1px solid #999999;
+  @apply text-sm text-[#666666];
+}
+
+input[type='number'] {
+  padding: 4px 8px 4px 8px;
+}
+
+input:focus, select:focus {
   outline: none;
 }
 
@@ -435,10 +462,10 @@ input:focus {
   /* padding: 6px 116px 9px 116px; */
 }
 
-#plate {
+/* #plate {
   display: inline;
   justify-content: space-between;
-}
+} */
 
 #profile-div{
   margin: auto;
