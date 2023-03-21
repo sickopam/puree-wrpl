@@ -1,0 +1,103 @@
+#corner-logo{
+    padding: 47px 284.16px 173.78px 22px;
+    width: 68.84px;
+    height: 83.22px;
+}
+
+#driver {
+    padding-left: 78px;
+    z-index: -2;
+    position: absolute; 
+    width: 569px;
+    height: 493px;
+    left: -34px;
+    top: 0px;
+}
+
+#box {
+    background: #FFFFFF;
+    box-shadow: 7.42332px 7.42332px 20px rgba(184, 192, 198, 0.8), -5px -5px 14px rgba(184, 192, 198, 0.8), 7.42332px 7.42332px 7px rgba(184, 192, 198, 0.15);
+    border-radius: 24px 24px 0px 0px;
+    z-index: 1;
+}
+
+#start {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #F5CE00;
+    padding: 45px 56px 4px 22px;
+}
+
+#account-info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #666666;
+    padding: 85px 152px 33px 22px;
+}
+
+.account-fill {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    padding: 33px 308px 8px 22px;
+    color: #333333;
+}
+
+.fill-example::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #666666;
+}
+
+.line {
+    box-sizing: border-box;
+    position: absolute;
+    width: 332px;
+    height: 1px;
+    left: 22px;
+    top: 497px;
+    background: #4F4F4F;
+    border: 3px solid #999999;
+    padding: 4px 21px 16px 22px;
+}
+
+#bottom-container {
+    padding: 0px 21px 29px 22px;
+    position: absolute;
+}
+
+#next-button {
+    position: absolute;
+    width: 190px;
+    height: 36px;
+    left: 93px;
+    top: 744px;
+    background: #F5CE00;
+    box-shadow: 0px 2px 1px rgba(36, 36, 36, 0.15);
+    border-radius: 20px;
+    align-items: center;
+    padding: 0px 92px 30px 93px;
+}
+
+#next {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
