@@ -9,35 +9,32 @@ import Link from 'next/link'
 
 export default function MerchSetup() {
   return (
-    <div className='bg-[#b0b0b0] font-poppins'>
-        
-          <Image id='corner-logo' className='h-fit' src={CornerLogo}/>
-          <Image id='merchant' className='brightness-75' src={Merchant}/>
-       
+    <div>
+    <div className='bg-[#b0b0b0] h-64'>
+      <Image id='merchant' className='' src={Merchant}/>
+      <Image id='corner-logo' className='-mt-96' src={CornerLogo}/>
+    </div>   
 
-    <div id='box' className='p-8 sticky'>
+    <div className='p-8 sticky bg-white rounded-t-3xl -mt-8'>
         <h1 id='start'>Start it up!</h1>
-        <p id='account-info' className='pb-10'>Provide your account information</p>
-            <form id='' className=''>
+        <p className='pb-10 font-extralight text-xs mt-2 text-gray-600'>Provide your account information</p>
+            <form className='mt-4'>
               <div className='space-y-4'>
-                <p className='account-fill'>Email</p>
-                  <input type='email' required/>
-                    {/* <div className='line'/> */}
+                <p className=''>Email</p>
+                  <input type='email' placeholder='jane_d@gmail.com' class="placeholder-gray-500 placeholder-opacity-8" required/>
 
                 <p className='account-fill'>Phone Number</p>
-                  <input type='tel' required/>
-                    {/* <div className='line'/> */}
+                  <input type='tel' placeholder='+628138764826' class="placeholder-gray-500 placeholder-opacity-80" required/>
 
                 <p className='account-fill'>Password</p>
-                  <input type='password' required/>
-                    {/* <div className='line'/> */}
+                  <input type='password'required/>
                     
                 <p className='account-fill'>Confirm Password</p>
                   <input type='password' required/>
-                      {/* <div className='line'/> */}
+
                 <div className='h-full flex justify-center'>
                   <Link href='/merchant_setup_dua'>
-                    <button id='next-button' className='grid place-items-center'>
+                    <button id='next-button' className='grid place-items-center mt-5'>
                       <p id='next'>Next</p>
                     </button>
                   </Link>

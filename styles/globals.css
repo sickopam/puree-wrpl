@@ -211,14 +211,11 @@ div {
 }
 
 #start {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 24px;
   text-align: center;
   color: #F5CE00;
   text-align: start;
-  /* padding: 45px 223px 4px 22px; */
 }
 
 /* #account-info {
@@ -297,7 +294,6 @@ div {
 }
 
 #next {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -352,25 +348,6 @@ div {
   text-align: center;
   color: #F5CE00;
   padding: 45px 223px 4px 22px;
-} */
-
-#account-info {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  color: #666666;
-  /* padding: 85px 152px 33px 22px; */
-}
-
-/* .account-fill {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  align-items: center;
-  display: flex;
-  padding: 33px 308px 8px 22px;
-  color: #333333;
 } */
 
 .container {
@@ -450,7 +427,6 @@ input:focus, select:focus {
 } */
 
 #next {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
