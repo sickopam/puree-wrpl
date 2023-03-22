@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Modal } from 'flowbite'
 
 import top from '../images/top.jpg'
 import back from '../images/back.jpg'
@@ -18,6 +19,12 @@ import message from '../images/message.jpeg'
 import notif from '../images/notif.jpeg'
 
 export default function menu_page() {
+    const [menuVisible, setMenuVisible] = useState(false)
+      
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible)
+    }
+    
     return (
         <div>
             <div className='w-screen grid place-items-start h-[20vh]'>
@@ -80,19 +87,26 @@ export default function menu_page() {
             </div>
 
             <div className='fixed bottom-32 right-9'>
-                <button class="bg-white rounded-full w-14 h-14 shadow-inner">
-                    <p className='text-amber-400 text-6xl -mt-2'>+</p>
-                </button>
-                <div className='hidden bg-white text-base float-left py-2 list-none text-left rounded shadow hover:shadow-lg outline-none'>
-                    <a href="#" className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700'> 
-                        Add menu
-                    </a>
-                    <a href="#" className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700'> 
-                        Add promotion
-                    </a>
-                </div>
-            </div>
-            
+        <button
+          className="bg-white rounded-full w-14 h-14 shadow-inner"
+          onClick={toggleMenu}
+        >
+          <p className='text-amber-400 text-6xl -mt-2'>+</p>
+        </button>
+        <div
+          className={`${
+            menuVisible ? 'block' : 'hidden'
+          } bg-white text-base float-left py-2 list-none text-left rounded shadow hover:shadow-lg outline-none`}
+        >
+          <a href="#" className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700'> 
+            Add menu
+          </a>
+          <a href="#" className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700'> 
+            Add promotion
+          </a>
+        </div>
+      </div>
+
             <div className='container h-24 fixed bottom-0 justify-around shadow-inner bg-white'>
                     <Image src={home} className='my-5 w-7 h-7'></Image>
                     <Image src={message} className='my-6 w-8 h-6'></Image>
