@@ -29,9 +29,9 @@ export default function menu_page() {
         <div>
             <div className='w-screen grid place-items-start h-[20vh]'>
                 <Image src={top} className='object-fill h-[20vh] w-screen'></Image>
-                <button className="ml-8 mt-5 absolute">
+                <a className="ml-8 mt-5 absolute" href='#'>
                     <Image src={back} className='w-8 rounded-full'></Image>
-                </button>
+                </a>
             </div>
             <div className='mx-8 rounded drop-shadow-lg -mt-16 bg-white p-5'>
                 <div>

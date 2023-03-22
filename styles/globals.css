@@ -479,3 +479,13 @@ input:focus, select:focus {
   object-position: top;
   z-index: -1;
 }
+
+.toggle-checkbox:checked {
+  @apply: right-0 border-amber-400;
+  right: 0;
+  border-color: #F5CE00;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-amber-400;
+  background-color: #F5CE00;
+}
