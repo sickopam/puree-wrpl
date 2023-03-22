@@ -10,19 +10,16 @@ import Link from 'next/link'
 
 export default function DriverSet1() {
   return (
-    <div className='bg-[#b0b0b0]'>
-        <div className=''>
-          <Image id='corner-logo' className='h-fit' src={CornerLogo}/>
+    <div>
+        <div className='bg-[#b0b0b0]'>
+          <Image id='corner-logo' className='' src={CornerLogo}/>
           <Image id='map' className='brightness-75' src={Map}/>
-        </div>
+    </div>
 
     <div id='box3' className='p-8 sticky'>
         <h1 id='start'>Let your store be known!</h1>
-        <p id='account-info' className='pb-10'>Provide your store's information</p>
+        <p id='account-info' className='pb-10'>Pin point your store's exact location</p>
             <div id='' className='space-y-4'>
-
-              <p className='account-fill'>Store Name</p>
-                <input required type='email' className='fill-example'/>
                   
               <p className='account-fill'>Address</p>
                 <input required type='text' className='fill-example'/>

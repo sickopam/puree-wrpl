@@ -480,6 +480,13 @@ input:focus, select:focus {
   z-index: -1;
 }
 
+#map {
+  width: 390px;
+  height: 408px;
+  object-position: top;
+  z-index: -1;
+}
+
 .toggle-checkbox:checked {
   @apply: right-0 border-amber-400;
   right: 0;
