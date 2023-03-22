@@ -10,15 +10,15 @@ import Link from 'next/link'
 
 export default function DriverSet1() {
   return (
-    <div className='bg-[#b0b0b0]'>
-        <div className=''>
-          <Image id='corner-logo' className='h-fit' src={CornerLogo}/>
+    <div>
+        <div className='bg-[#b0b0b0] h-64'>
           <Image id='merchant' className='brightness-75' src={Merchant}/>
-        </div>
+          <Image id='corner-logo' className='-mt-96' src={CornerLogo}/>
+        </div>  
 
-    <div id='box' className='p-8 sticky'>
+    <div className='p-8 sticky bg-white rounded-t-3xl -mt-8'>
         <h1 id='start'>Tell us about your store!</h1>
-        <p id='account-info' className='pb-10'>Provide your store's information</p>
+        <p className='pb-10 font-extralight text-xs mt-4 text-gray-600'>Provide your store's information</p>
             <div id='' className='space-y-4'>
 
               <p className='account-fill'>Store Name</p>
@@ -37,7 +37,7 @@ export default function DriverSet1() {
                   
               <p className='account-fill'>Address</p>
                 <input required type='text' className='fill-example'/>
-              <div className='w-full flex justify-evenly'>
+              <div className='w-full flex justify-evenly pt-10'>
 
                 <Link href='/merchant_setup_satu'>
                   <button id='previous-button-sm' className='grid place-items-center'>
