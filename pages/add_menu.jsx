@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -6,7 +6,15 @@ import top from '../images/top-addmenu.png'
 import back from '../images/back.jpg'
 import addphoto from '../images/add-photo.png'
 
+
+
 export default function AddMenu() {
+    const [popUp, setPopUp] = useState(false)
+      
+    const toggleMenu = () => {
+        setPopUp(!popUp)
+    }
+
   return (
     <div>
         <div>
@@ -23,7 +31,17 @@ export default function AddMenu() {
                     <Image id='add-photo' src={addphoto}/>
             </div>
             <p className='-ml-8 mt-16 mr-10 text-xs text-gray-400 font-normal row-span-1'>Put the best photo of your food. Make it as appetizing as possible to attract buyers!</p>
-            <p className='-ml-8 mt-8 font-bold text-base text-yellow-400 row-span-1'>Upload Photo</p>
+            <div>
+                <button className='-ml-8 mt-8 font-bold text-base text-yellow-400 row-span-1' onClick={toggleMenu}>Upload Photo</button>
+            
+            <div
+                className={`${
+                    popUp ? 'block' : 'hidden'
+                } bg-white text-base float-left py-2 list-none text-left rounded shadow hover:shadow-lg outline-none`}
+            >
+
+        </div>
+            </div>
        </div>
 
        <div className='ml-8'>

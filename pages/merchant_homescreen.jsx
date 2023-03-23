@@ -31,7 +31,7 @@ export default function MerchantHomescreen() {
                     </div>
                 </div>
         </div>
-        <div className='box-border h-24 w-80 mx-8 rounded-lg-3xl drop-shadow-lg mt-8 bg-white p-5'>
+        <div className='h-24 w-80 mx-8 rounded-lg drop-shadow-lg mt-8 bg-white p-5'>
             <div className='grid grid-cols-2'>
                 <p className='font-medium text-black text-sm text-center'>Today's revenue</p>
                 <p className='font-medium text-black text-sm text-center'>Today's transaction</p>

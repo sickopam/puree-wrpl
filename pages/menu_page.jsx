@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Modal } from 'flowbite'
 
 import top from '../images/top.jpg'
 import back from '../images/back.jpg'
@@ -98,7 +97,7 @@ export default function menu_page() {
             menuVisible ? 'block' : 'hidden'
           } bg-white text-base float-left py-2 list-none text-left rounded shadow hover:shadow-lg outline-none`}
         >
-          <a href="#" className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700'> 
+          <a href="/add_menu" className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700'> 
             Add menu
           </a>
           <a href="#" className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700'> 
