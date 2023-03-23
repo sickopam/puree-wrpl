@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import top from '../images/homescreen-top.png'
 import ads from '../images/ads.png'
@@ -45,8 +46,14 @@ export default function MerchantHomescreen() {
             <div className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border'>
                 <Image src={orders} className='mx-auto mt-2'/>
             </div>
-            <div className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border'>
-                <Image src={menu} className='mx-auto mt-2'/>
+            <div>
+                <Link href='/menu_page'>
+                    <button>
+                        <div className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border'>
+                            <Image src={menu} className='mx-auto mt-2'/>
+                        </div>
+                    </button>
+                </Link>
             </div>
             <div className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border'>
                 <Image src={supplies} className='mx-auto mt-2'/>                
@@ -72,10 +79,10 @@ export default function MerchantHomescreen() {
         </div>
 
         <div className='container h-24 fixed bottom-0 justify-around shadow-inner bg-white'>
-            <Image src={home} className='my-5 w-7 h-7'></Image>
-            <Image src={message} className='my-6 w-8 h-6'></Image>
-            <Image src={notif} className='my-5 w-7 h-8'></Image>
-            <Image src={profile2} className='my-5 w-8 h-8'></Image>
+            <Image src={home} className='my-5 w-7 h-7'/>                
+            <Image src={message} className='my-6 w-8 h-6'/>
+            <Image src={notif} className='my-5 w-7 h-8'/>
+            <Image src={profile2} className='my-5 w-8 h-8'/>
         </div>
     </div>
   )
