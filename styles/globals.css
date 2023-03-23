@@ -488,3 +488,29 @@ input:focus, select:focus {
 /* #plus-button {
   position: absolute;
 } */
+
+#profilepic {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 2rem;
+  background-color: blue;
+}
+
+#wallet {
+  height: 1.5rem;
+  width: 10rem;
+  border-radius: 1rem;
+  background-color: #f5ce00;
+}
+
+#driver-bg {
+  background-image: linear-gradient(#cfd7dc,#8096a3);
+}
+
+#income {
+  height: 7rem;
+  width: 85%;
+  border-radius: 1rem;
+  background-color: #ffff;
+  margin-top: -15%;
+}

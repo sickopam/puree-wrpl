@@ -5,9 +5,9 @@ import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
 
 import Logland from '@/pages/login_landing'
-import Merch from '@/pages/merchant_log'
-import MerchSetup from '@/components/merchant_setup'
-import MerchHome from '@/components/merchant_homescreen'
+// import Merch from '@/pages/merchant_log'
+// import MerchSetup from '@/components/merchant_setup'
+// import MerchHome from '@/components/merchant_homescreen'
 import DriverSet1 from '@/pages/driver_setup_satu'
 import DriverLand from './driver_landing'
 
