@@ -11,6 +11,9 @@ import MerchSetup2 from '@/pages/merchant_setup_dua'
 import MerchHome from '@/components/merchant_homescreen'
 import DriverSet1 from '@/pages/driver_setup_satu'
 import DriverLand from './driver_landing'
+import Menu_Page from './menu_page'
+import MerchantHomescreen from './merchant_homescreen'
+import Supplies from './supplies'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +28,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <DriverLand/>
+      {/* <Menu_Page/> */}
+      {/* <MerchantHomescreen/> */}
+      <Supplies/>
+      {/* <DriverLand/> */}
       {/* <MerchSetup/> */}
       {/* <DriverSet1/> */}
       {/* <MerchHome/> */}

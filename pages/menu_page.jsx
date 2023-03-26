@@ -17,7 +17,7 @@ import profile2 from '../images/profile-picture.png'
 import message from '../images/message.jpeg'
 import notif from '../images/notif.jpeg'
 
-export default function menu_page() {
+export default function Menu_Page() {
     const [menuVisible, setMenuVisible] = useState(false)
       
     const toggleMenu = () => {
@@ -29,7 +29,9 @@ export default function menu_page() {
             <div className='w-screen grid place-items-start h-[20vh]'>
                 <Image src={top} className='object-fill h-[20vh] w-screen'></Image>
                 <a className="ml-8 mt-5 absolute" href='#'>
-                    <Image src={back} className='w-8 rounded-full'></Image>
+                    <Link href='/merchant_homescreen'>
+                        <Image src={back} className='w-8 rounded-full'></Image>
+                    </Link>
                 </a>
             </div>
             <div className='mx-8 rounded drop-shadow-lg -mt-16 bg-white p-5'>

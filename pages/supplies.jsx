@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import top from '../images/top-supply.jpg'
 import back from '../images/back.jpg'
@@ -8,14 +9,16 @@ import profile2 from '../images/profile-picture.png'
 import message from '../images/message.jpeg'
 import notif from '../images/notif.jpeg'
 
-export default function supplies() {
+export default function Supplies() {
     return(
         <div>
             <div>
                 <Image src={top}></Image>
-                <a className="ml-8 -mt-24 absolute" href='#'>
-                    <Image src={back} className='w-8 rounded-full'></Image>
-                </a>
+                <Link href='/merchant_homescreen'>
+                <div className="ml-8 -mt-24 absolute" href='#'>
+                        <Image src={back} className='w-8 rounded-full'></Image>
+                </div>
+                </Link>
                 <p className='-mt-12 font-semibold text-white flex items-center justify-center'>Supplies</p>
             </div>
 

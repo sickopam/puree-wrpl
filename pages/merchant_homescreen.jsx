@@ -56,7 +56,9 @@ export default function MerchantHomescreen() {
                 </Link>
             </div>
             <div className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border'>
-                <Image src={supplies} className='mx-auto mt-2'/>                
+                <Link href='/supplies'>
+                    <Image src={supplies} className='mx-auto mt-2'/>                
+                </Link>
             </div>
             <div className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border'>
                 <Image src={ads} className='mx-auto mt-2'/>
