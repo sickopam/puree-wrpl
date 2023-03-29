@@ -2,7 +2,7 @@ import React from 'react'
 
 const Ratings = () => {
   return (
-    <div className='px-8 py-4 space-y-5'>
+    <div className='px-8 py-6 space-y-5'>
         <div className='flex justify-between text-xs'>
           <h2>Last 100 rated orders</h2>
           <h3 className='font-light'>Updated 5 days ago</h3>

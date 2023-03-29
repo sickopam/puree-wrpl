@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <div className='py-7 flex justify-evenly h-fit tshadow'>
+    <div id='nav' className='flex justify-evenly h-fit tshadow'>
         {img.map((items, i) => (
             <img key={i} src={items.image}></img>
         ))}
