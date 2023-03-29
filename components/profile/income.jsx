@@ -13,14 +13,6 @@ const Income = () => {
                 </div>
               </>
             ))}
-            {/* <div className=''>
-              <h3 className='text-lg'>Today's income</h3>
-              <h2 className='text-xl font-semibold'>225.6K</h2>
-            </div>
-            <div className=''>
-              <h3 className='text-lg'>Today's delivery</h3>
-              <h2 className='text-xl font-semibold'>6</h2>
-            </div> */}
           </div>
         </div>
     </div>
