@@ -6,14 +6,12 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",
    
       // Or if using `src` directory:
-      "./src/**/*.{js,ts,jsx,tsx}",
-      "./node_modules/flowbite/**/*.js",
+      "./src/**/*.{js,ts,jsx,tsx}"
     ],
     theme: {
       extend: {},
       fontFamily: {
         poppins: 'Poppins'
       }
-    },
-    plugins: [require('flowbite/plugin')],
+    }
   }
