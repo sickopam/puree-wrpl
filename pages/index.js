@@ -14,8 +14,7 @@ import DriverLand from './driver_landing'
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-
-
+  window.screen.orientation.lock('portrait')
   return (
     <>
       <Head>

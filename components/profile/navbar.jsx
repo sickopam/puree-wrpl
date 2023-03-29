@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <div id='nav' className='flex justify-evenly h-fit tshadow'>
         {img.map((items, i) => (
-            <img key={i} src={items.image}></img>
+            <button>
+              <img key={i} src={items.image}></img>
+            </button>
         ))}
     </div>
   )
