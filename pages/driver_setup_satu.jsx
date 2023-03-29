@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 export default function DriverSet1() {
   return (
-    <div className='bg-[#b0b0b0] font-poppins'>
+    <div className='bg-[#b0b0b0] h-fit font-poppins'>
         <div className='inline-flex container'>
           <Image id='corner-logo' className='h-fit' src={CornerLogo}/>
           <Image id='driver' className='brightness-75' src={Driver}/>
