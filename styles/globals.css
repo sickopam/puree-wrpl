@@ -557,9 +557,13 @@ input:focus, select:focus {
 }
 
 #chat-top {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
   height: 5rem;
   width: 100%;
-  border-bottom: 0.5px solid #777272;
+  /* border-bottom: 0.5px solid #777272; */
 }
 
 #msg {

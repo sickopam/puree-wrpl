@@ -33,4 +33,12 @@ const text = [
     {id: 31, name: 'Leukie', msg: 'Quickly', resto: 'McDonalds', date: '21/1'},
     {id: 31, name: 'Bronchi', msg: 'Quickly', resto: 'Toetoeng', date: '10/7'},
     {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
 ]
