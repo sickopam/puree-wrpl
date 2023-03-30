@@ -14,8 +14,10 @@ function Card() {
         ))}
       </div>
 
-      <div id='map'>
-
+      <div id='map' className=' p-3'>
+          <div id='high-demand' className='grid place-items-center'>
+            <h3 className='text-2xs'>High demand areas</h3>
+          </div>
       </div>
     </div>
   )

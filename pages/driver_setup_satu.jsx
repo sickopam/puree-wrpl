@@ -20,22 +20,13 @@ export default function DriverSet1() {
         <h1 id='start'>Start it up!</h1>
         <p id='account-info' className='pb-10'>Provide your account information</p>
             <form id='' className=''>
-              <div className='space-y-4'>
-                <p className='account-fill'>Email</p>
-                  <input type='email' required/>
-                    {/* <div className='line'/> */}
-
-                <p className='account-fill'>Phone Number</p>
-                  <input type='tel' required/>
-                    {/* <div className='line'/> */}
-
-                <p className='account-fill'>Password</p>
-                  <input type='password' required/>
-                    {/* <div className='line'/> */}
-                    
-                <p className='account-fill'>Confirm Password</p>
-                  <input type='password' required/>
-                      {/* <div className='line'/> */}
+              <div className='space-y-8'>
+                {form.map((e, i) => (
+                  <div key={i} className='space-y-1'>
+                    <p>{e.label}</p>
+                    <input placeholder={e.pholder} type={e.type} required/>
+                  </div>
+                ))}
                 <div className='h-full flex justify-center'>
                   <Link href='/driver_setup_dua'>
                     <button id='next-button' className='grid place-items-center'>
@@ -49,3 +40,10 @@ export default function DriverSet1() {
     </div>
   )
 }
+
+const form = [
+  {id: 1, label: 'Email', type: 'email', pholder: 'james_d@gmail.com'},
+  {id: 2, label: 'Phone Number', type: 'tel', pholder: '+62877889900'},
+  {id: 3, label: 'Password', type: 'password', pholder: 'Minimum 8 characters'},
+  {id: 4, label: 'Confirm Password', type: 'password', pholder: 'Please retype your password'}
+]

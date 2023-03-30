@@ -186,7 +186,7 @@ div {
   top: 78px;
 }
 
-#box {
+#box, #box2 {
   background: #FFFFFF;
   height: 65vh;
   box-shadow: 7.42332px 7.42332px 20px rgba(184, 192, 198, 0.8), -5px -5px 14px rgba(184, 192, 198, 0.8), 7.42332px 7.42332px 7px rgba(184, 192, 198, 0.15);
@@ -195,11 +195,7 @@ div {
 }
 
 #box2 {
-  background: #FFFFFF;
   height: 70vh;
-  box-shadow: 7.42332px 7.42332px 20px rgba(184, 192, 198, 0.8), -5px -5px 14px rgba(184, 192, 198, 0.8), 7.42332px 7.42332px 7px rgba(184, 192, 198, 0.15);
-  border-radius: 24px 24px 0px 0px;
-  z-index: 1;
 }
 
 #start {
@@ -368,7 +364,7 @@ div {
 .container {
   /* height: fit-content; */
   /* width: fit-content; */
-  display: flex;
+  /* display: flex; */
   position: sticky;
   top: 0;
 }
@@ -376,9 +372,9 @@ div {
 input {
   width: 100%;
   border-radius: 0;
-  padding: 0px 8px 0px 8px;
+  padding: 0px 6px 3px 6px;
   border-bottom: 1px solid #999999;
-  @apply text-sm text-[#666666]
+  @apply text-sm text-[#666666];
 }
 
 select {
@@ -493,7 +489,7 @@ input:focus, select:focus {
   height: 4rem;
   width: 4rem;
   border-radius: 2rem;
-  background-color: blue;
+  background-color: rgb(210, 205, 205);
 }
 
 #wallet {
@@ -548,8 +544,27 @@ input:focus, select:focus {
 #map {
   height: 20rem;
   width: 20rem;
-  border-radius: 10px;
+  border-radius: 1rem;
   background: #fff;
-  box-shadow: 0px 5px 3px 2px rgba(130, 130, 140, 0.15);
+  box-shadow: 1px 1px 3px 2px rgba(130, 130, 140, 0.15);
+}
 
+#high-demand {
+  height: 1.25rem;
+  width: 7rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px 1.5px rgba(105, 105, 112, 0.15);
+}
+
+#chat-top {
+  height: 5rem;
+  width: 100%;
+  border-bottom: 0.5px solid #777272;
+}
+
+#msg {
+  height: 5rem;
+  width: 100%;
+  /* background: #d7d1d1; */
+  border-bottom: 0.5px solid #777272;
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '@/components/profile/navbar'
-import Profile from '@/components/profile/profile'
-import Income from '@/components/profile/income'
-import Ratings from '@/components/profile/ratings'
-import Card from '@/components/profile/card'
+import Navbar from '@/components/home/navbar'
+import Profile from '@/components/home/profile'
+import Income from '@/components/home/income'
+import Ratings from '@/components/home/ratings'
+import Card from '@/components/home/card'
 
 export default function DriverHome() {
   return (

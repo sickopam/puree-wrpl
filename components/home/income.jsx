@@ -22,6 +22,6 @@ const Income = () => {
 export default Income
 
 const income = [
-  {id: 1, title: 'Todays income', val: '225.6K'},
-  {id: 2, title: 'Todays Delivery', val: '6'}
+  {id: 1, title: "Today's income", val: '225.6K'},
+  {id: 2, title: "Today's Delivery", val: '6'}
 ]
