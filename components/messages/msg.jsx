@@ -6,7 +6,7 @@ const Msg = () => {
         {text.map((t, i) => (
             <div className='w-full inline-flex space-x-5'>
                 <div className='grid items-center pl-4'>
-                    <span id='profilepic'/>
+                    <span id='chatpic'/>
                 </div>
                 <div id='msg' className='w-full flex justify-between'>
                     <div className='grid items-center'>
@@ -29,16 +29,16 @@ const Msg = () => {
 export default Msg
 
 const text = [
-    {id: 31, name: 'Tumor', msg: 'Quickly', resto: 'KFC', date: '29/6'},
-    {id: 31, name: 'Leukie', msg: 'Quickly', resto: 'McDonalds', date: '21/1'},
-    {id: 31, name: 'Bronchi', msg: 'Quickly', resto: 'Toetoeng', date: '10/7'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
-    {id: 31, name: 'Pneumoni', msg: 'Quickly', resto: 'MM', date: '24/9'},
+    {id: 31, name: 'Gandhi', msg: 'Buruan bang', resto: 'KFC', date: '29/6'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Om Bob', date: '21/1'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Toetoeng', date: '10/7'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
+    {id: 31, name: 'Ahok', msg: 'Buruan bang', resto: 'Mekar Mulya', date: '24/9'},
 ]

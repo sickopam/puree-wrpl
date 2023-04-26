@@ -19,7 +19,7 @@ export default function DriverSet1() {
     <div id='box' className='p-8 sticky'>
         <h1 id='start'>Start it up!</h1>
         <p id='account-info' className='pb-10'>Provide your account information</p>
-            <form id='' className=''>
+            <form id='' className='' required>
               <div className='space-y-8'>
                 {form.map((e, i) => (
                   <div key={i} className='space-y-1'>
