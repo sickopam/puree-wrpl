@@ -381,6 +381,10 @@ input[type='number'] {
   padding: 4px 8px 4px 8px;
 }
 
+input[type='file'] {
+  display: none;
+}
+
 input:focus, select:focus {
   outline: none;
 }
@@ -464,10 +468,6 @@ input:focus, select:focus {
   height: 116px;
   border-radius: 50%;
 } */
-
-#file-upload{
-  display: none;
-}
 
 /* #plus-button {
   position: absolute;

@@ -27,21 +27,25 @@ export default function AddMenu() {
 
         <div className='grid grid-rows-2 grid-cols-2'>
             <div className='ml-8 mt-16 row-span-2'>
-                <input required type='file' id='file-upload'/> 
-                    <Image id='add-photo' src={addphoto}/>
+                <label>
+                    <input required type='file' id='file-upload' accept='image/png, image/jpeg'/> 
+                        <Image id='add-photo' src={addphoto} className='cursor-pointer w-fit'/>
+                </label>
             </div>
-            <p className='-ml-8 mt-16 mr-10 text-xs text-gray-400 font-normal row-span-1'>Put the best photo of your food. Make it as appetizing as possible to attract buyers!</p>
-            <div>
-                <button className='-ml-8 mt-8 font-bold text-base text-yellow-400 row-span-1' onClick={toggleMenu}>Upload Photo</button>
-            
-            <div
+            <p className='-ml-8 mt-16 mr-10 text-xs text-gray-400'>Put the best photo of your food. Make it as appetizing as possible to attract buyers!</p>
+            <form>
+                <label>
+                    <h1 className='-ml-8 mt-8 font-bold text-yellow-400 cursor-pointer w-fit'>Upload Photo</h1>
+                    <input required type='file' id='file-upload' accept='image/png, image/jpeg'/>
+                </label>
+            {/* <div
                 className={`${
                     popUp ? 'block' : 'hidden'
-                } bg-white text-base float-left py-2 list-none text-left rounded shadow hover:shadow-lg outline-none`}
+                } bg-black text-base float-left py-2 list-none text-left rounded shadow hover:shadow-lg outline-none`}
             >
 
-        </div>
-            </div>
+        </div> */}
+            </form>
        </div>
 
        <div className='ml-8'>
