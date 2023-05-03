@@ -3,11 +3,13 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 import Logland from '@/pages/login_landing'
 import Merch from '@/pages/merchant_log'
 import MerchSetup from '@/pages/merchant_setup_satu'
 import MerchSetup2 from '@/pages/merchant_setup_dua'
+import MerchantSetup3 from './merchant_setup_tiga'
 import MerchHome from '@/components/merchant_homescreen'
 import DriverSet1 from '@/pages/driver_setup_satu'
 import DriverLand from './driver_landing'
@@ -30,10 +32,10 @@ export default function Home() {
       </Head>
       {/* <Menu_Page/> */}
       {/* <MerchantHomescreen/> */}
-      <Supplies/>
+      {/* <Supplies/> */}
       {/* <DriverLand/> */}
       {/* <MerchSetup/> */}
-      {/* <DriverSet1/> */}
+      <MerchantSetup3/>
       {/* <MerchHome/> */}
       {/* <Logland/> */}
       {/* <Merch/> */}

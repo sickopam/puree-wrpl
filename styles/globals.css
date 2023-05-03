@@ -196,7 +196,7 @@ div {
 
 #box3 {
   background: #FFFFFF;
-  height: 45vh;
+  height: fit-content;
   box-shadow: 7.42332px 7.42332px 20px rgba(184, 192, 198, 0.8), -5px -5px 14px rgba(184, 192, 198, 0.8), 7.42332px 7.42332px 7px rgba(184, 192, 198, 0.15);
   border-radius: 24px 24px 0px 0px;
   z-index: 1;
@@ -495,4 +495,9 @@ input:focus, select:focus {
 .toggle-checkbox:checked + .toggle-label {
   @apply: bg-amber-400;
   background-color: #F5CE00;
+}
+
+.map-container {
+  height: 50vh;
+  width: 100%;
 }
