@@ -577,3 +577,17 @@ input:focus, select:focus {
   /* background: #d7d1d1; */
   border-bottom: 0.5px solid #777272;
 }
+
+.card-order {
+  background-color: white;
+}
+
+.map-container {
+  height: 50vh;
+  width: 100%;
+  object-position: top;
+}
+
+.mapboxgl-ctrl {
+  color: #fff;
+}
