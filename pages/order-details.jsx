@@ -40,12 +40,17 @@ export default function orderDetails() {
             </div>
 
         </div> 
+
         <div className='h-1 bg-[#f5f5f5]'/>
         <div id='order-summary' className='flex justify-between text-sm font-semibold'>
             <h2>Subtotal</h2>
             <h3>106.560</h3>
         </div>
         <div className='h-1 bg-[#f5f5f5]'/>
+
+        <div id='order-summary'>
+            
+        </div>
     </div>
   )
 }

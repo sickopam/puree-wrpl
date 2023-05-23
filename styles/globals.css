@@ -509,3 +509,5 @@ input:focus, select:focus {
  #order-summary {
   @apply px-[2rem] py-[1.5rem];
  }
+
+ 
