@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import back from '../images/back.jpg'
+import msg from '../images/message.jpeg'
 
 export default function orderDetails() {
   return (
@@ -49,7 +50,33 @@ export default function orderDetails() {
         <div className='h-1 bg-[#f5f5f5]'/>
 
         <div id='order-summary'>
-            
+            <div className='flex justify-between'>
+                <div className='inline-flex space-x-4'>
+                    <div id='driver_pic'/>
+                    <div>
+                        <h2 id='driver_name'>James Doe</h2>
+                        <h3 id='driver_title'>Driver</h3>
+                    </div>
+                </div>
+                <div className='grid items-center'>
+                    <Image style={{width: '24px', height: '20px'}} src={msg}/>
+                </div>
+            </div>
+        </div>
+
+        <div id='order-summary'>
+            <div className='flex justify-evenly items-center'>
+                {progress.map((e) => (
+                    <div key={e.id} id='progress_bar'/>
+                ))}
+                <div id='delivered'/>
+            </div>
+            <div id='progress_label'>
+                {progress.map((e) => (
+                    <h3>{e.label}</h3>
+                ))}
+                <h3>Delivered</h3>
+            </div>
         </div>
     </div>
   )
@@ -59,3 +86,5 @@ const orders = [
     {menu: '[PinkFong] Chicken Japchae - MPASI', price: '53.280'},
     {menu: 'Japanese Beef Curry Udon - MPASI', price: '53.280'}
 ]
+
+const progress = [{id: 1, label: 'Received'}, {id: 2, label: 'Processing'}, {id: 3, label: 'On Delivery'}]
