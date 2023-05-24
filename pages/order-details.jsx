@@ -78,6 +78,16 @@ export default function orderDetails() {
                 <h3>Delivered</h3>
             </div>
         </div>
+
+        <div style={{boxShadow: '0px 0px 7px #b0b0b0', position: 'sticky', bottom: 0}} className='px-10 py-14 bg-white'>
+            {[1].map((e, i) => (
+                <Link href='pin'>
+                    <div id='deliveredbutton' className='grid place-items-center'>
+                        <h1 key={i}>Processing</h1>
+                    </div>
+                </Link>
+            ))}
+        </div>
     </div>
   )
 }
@@ -87,4 +97,4 @@ const orders = [
     {menu: 'Japanese Beef Curry Udon - MPASI', price: '53.280'}
 ]
 
-const progress = [{id: 1, label: 'Received'}, {id: 2, label: 'Processing'}, {id: 3, label: 'On Delivery'}]
+const progress = [{id: 1, label: 'Received', button: 'Processing'}, {id: 2, label: 'Processing', button: 'On Delivery'}, {id: 3, label: 'On Delivery', button: "Waiting for customer's confirmation"}]
