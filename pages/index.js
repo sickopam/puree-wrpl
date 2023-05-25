@@ -16,6 +16,7 @@ import DriverLand from './driver_landing'
 import Menu_Page from './menu_page'
 import MerchantHomescreen from './merchant_homescreen'
 import Supplies from './supplies'
+import Details from './order-details'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -35,7 +36,7 @@ export default function Home() {
       {/* <Supplies/> */}
       {/* <DriverLand/> */}
       {/* <MerchSetup/> */}
-      <MerchantSetup3/>
+      <Details/>
       {/* <MerchHome/> */}
       {/* <Logland/> */}
       {/* <Merch/> */}

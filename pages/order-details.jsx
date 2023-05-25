@@ -8,7 +8,7 @@ export default function orderDetails() {
   return (
     <div className='h-screen'>
 
-        <div style={{position: 'sticky', top: 0}} className='shadow-lg p-8 bg-white'>
+        <div style={{position: 'sticky', top: 0}} className='shadow-lg px-8 pt-12 pb-8 bg-white'>
             <div className='inline-flex w-full'>
                 <Link href='shop_page'>
                     <Image src={back} className='w-8 rounded-full shadow-xl grid items-center'></Image>
