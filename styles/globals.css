@@ -583,13 +583,13 @@ input:focus, select:focus {
 }
 
 .map-container {
-  height: 50vh;
+  height: 92vh;
   width: 100%;
-  object-position: top;
+  z-index: -1;
 }
 
 .mapboxgl-ctrl {
-  color: #fff;
+  display: none !important;
 }
 
 #order-summary {
@@ -636,14 +636,23 @@ input:focus, select:focus {
   @apply flex justify-between mt-3 mb-5;
  }
 
- #mapcontainer {
+ #mapcont {
+  height: 90vh;
   position: sticky;
   top: 0;
  }
 
  #trackbox {
-  height: fit-content;
+  position: sticky;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
   background: #fff;
-  border-radius: 1.5rem;
   box-shadow: 0px 0px 10px #b0b0b0;
  }
+
+ #puller {
+  height: .5rem;
+  width: 5rem;
+  border-radius: .5rem;
+  background-color: #b0b0b0;
+}

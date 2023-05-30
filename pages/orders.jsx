@@ -12,12 +12,15 @@ const orders = [
 
 export default function order() {
     return (
-        <div className="h-screen">
-            <div id="mapcontainer">
-                <Maps className='h-full'/>
+        <div className="h-fit">
+            <div id="mapcont">
+                <Maps/>
             </div>
 
-            <div id="trackbox" className="sticky">
+            <div id="trackbox">
+                <div className="flex justify-center pt-3">
+                    <div id="puller"/>
+                </div>
                 <div id='order-summary' className='space-y-7'>
                     <div className='inline-flex gap-1'>
                         <div className="inline-flex gap-2">

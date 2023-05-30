@@ -7,9 +7,9 @@ function Maps() {
 
     const mapContainer = useRef(null)
     const map = useRef(null)
-    const [lng, setLng] = useState(-70.9)
-    const [ltd, setLtd] = useState(43.45)
-    const [zoom, setZoom] = useState(9)
+    const [lng, setLng] = useState(110.370529)
+    const [ltd, setLtd] = useState(-7.797068)
+    const [zoom, setZoom] = useState(11)
 
     useEffect(() => {
         if(map.current) return;
