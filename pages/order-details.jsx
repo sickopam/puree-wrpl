@@ -67,7 +67,7 @@ export default function orderDetails() {
         <div id='order-summary'>
             <div className='flex justify-evenly items-center'>
                 {progress.map((e) => (
-                    <div key={e.id} id='progress_bar'/>
+                    <div key={e.id} id='progress_bar' className='active'/>
                 ))}
                 <div id='delivered'/>
             </div>
