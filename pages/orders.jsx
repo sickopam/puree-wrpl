@@ -42,9 +42,14 @@ export default function order() {
                 </div> 
 
                 <div className='h-1 bg-[#f5f5f5]'/>
-                <div id='order-summary' className='flex justify-between text-sm font-semibold'>
+                <div id='order-summary' className='flex justify-between text-xs text-[#666666] font-semibold'>
                     <h2>Subtotal</h2>
-                    <h3>106.560</h3>
+                    <div>
+                        <h3 className="text-right">106.560</h3>
+                        <div className="text-2xs font-light inline-flex">
+                            <h4>Paid with <a className="font-semibold">PureePay</a></h4>
+                        </div>
+                    </div>
                 </div>
                 <div className='h-1 bg-[#f5f5f5]'/>
 
