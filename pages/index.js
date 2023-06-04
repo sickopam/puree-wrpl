@@ -7,6 +7,7 @@ import { useState } from 'react'
 import Logland from '@/pages/login_landing'
 import DriverSet1 from '@/pages/driver_setup_satu'
 import DriverLand from './driver_landing'
+import Order from './orders'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function Home() {
     <>
       <Head>
       </Head>
-      <DriverLand/>
+      <Order/>
 
     </>
   )

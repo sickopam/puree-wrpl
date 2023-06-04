@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Maps from '@/components/map'
-import back from '../images/back.png'
-import Link from "next/link";
 import Image from "next/image";
 import msg from '../images/msg.jpg'
 
-const orders = [
-    {menu: '[PinkFong] Chicken Japchae - MPASI', price: '53.280'},
-    {menu: 'Japanese Beef Curry Udon - MPASI', price: '53.280'}
-]
-
 export default function order() {
+
+    const [selected, setSelected] = useState(undefined);
+
+    const buttonHandler = (e, id, i) => {
+      e.currentTarget.classList.toggle("active");
+      if (id !== selected) {
+        const button = document.querySelectorAll("#progress_bar");
+        button.forEach((btn, index) => {
+          if (index !== i) {
+            btn.classList.add("active");
+          }
+        });
+        setSelected(id);
+      } else {
+        const button = document.querySelectorAll("#progress_bar");
+        button.forEach(btn => {
+          btn.classList.add("active");
+        });
+        setSelected(undefined);
+      }
+    };
+
     return (
         <div className="h-fit">
             <div id="mapcont">
@@ -70,8 +85,10 @@ export default function order() {
 
                 <div id='order-summary'>
                     <div className='flex justify-evenly items-center'>
-                        {progress.map((e) => (
-                            <div key={e.id} id='progress_bar' className="active"/>
+                        {progress.map((items, i) => (
+                            <div onClick={e => {
+                            buttonHandler(e, items.id, i);
+                            }} key={items.id} id='progress_bar'/>
                         ))}
                         <div id='delivered'/>
                     </div>
@@ -88,3 +105,8 @@ export default function order() {
 }
 
 const progress = [{id: 1, label: 'Received', button: 'Processing'}, {id: 2, label: 'Processing', button: 'On Delivery'}, {id: 3, label: 'On Delivery', button: "Waiting for customer's confirmation"}]
+
+const orders = [
+    {menu: '[PinkFong] Chicken Japchae - MPASI', price: '53.280'},
+    {menu: 'Japanese Beef Curry Udon - MPASI', price: '53.280'}
+]
