@@ -10,18 +10,23 @@ export default function order() {
     const buttonHandler = (e, id, i) => {
       e.currentTarget.classList.toggle("active");
       if (id !== selected) {
-        const button = document.querySelectorAll("#progress_bar");
-        button.forEach((btn, index) => {
-          if (index !== i) {
-            btn.classList.add("active");
-          }
-        });
+        // const button = document.querySelectorAll("#progress_bar");
+        // button.forEach((btn, index) => {
+        //   if (index !== i) {
+        //     btn.classList.add("active");
+        //     console.log(index)
+        //   }
+        // });
         setSelected(id);
       } else {
         const button = document.querySelectorAll("#progress_bar");
+        const tombol = document.querySelectorAll('#delivered')
         button.forEach(btn => {
           btn.classList.add("active");
         });
+        tombol.forEach(btn => {
+            btn.classList.add("active")
+        })
         setSelected(undefined);
       }
     };
@@ -90,7 +95,9 @@ export default function order() {
                             buttonHandler(e, items.id, i);
                             }} key={items.id} id='progress_bar'/>
                         ))}
-                        <div id='delivered'/>
+                        <div onClick={e => {
+                            buttonHandler(e);
+                            }} id='delivered'/>
                     </div>
                     <div id='progress_label'>
                         {progress.map((e) => (

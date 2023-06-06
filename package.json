@@ -19,6 +19,7 @@
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "ios-sim": "^9.0.0",
+    "mapbox-gl": "^2.15.0",
     "native-run": "^1.7.2",
     "next": "13.2.3",
     "react": "18.2.0",
