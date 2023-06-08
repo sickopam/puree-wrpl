@@ -656,3 +656,25 @@ input:focus, select:focus {
   border-radius: .5rem;
   background-color: #b0b0b0;
 }
+
+#floating {
+  position: fixed;
+  @apply px-4 pt-10 inline-flex w-full;
+}
+
+#back {
+  padding-top: .25rem;
+}
+
+#orderno {
+  @apply flex justify-center space-x-2 text-sm;
+}
+
+#orderfloat {
+  height: 2rem;
+  width: 10rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0px 0px 8px #b0b0b0;
+  @apply text-center grid items-center;
+}

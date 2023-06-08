@@ -1,13 +1,19 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import Maps from '@/components/map'
 import Image from "next/image";
 import msg from '../images/msg.jpg'
+import back from '../images/back.png'
 
-export default function order() {
+import { GetOrders } from "./api/track/getItems";
+
+export default function Order(props) {
+
+    const[name, merchantName] = props;
 
     const [selected, setSelected] = useState(undefined);
 
-    const buttonHandler = (e, id, i) => {
+    const buttonHandler = (e, id) => {
       e.currentTarget.classList.toggle("active");
       if (id !== selected) {
         // const button = document.querySelectorAll("#progress_bar");
@@ -31,9 +37,24 @@ export default function order() {
       }
     };
 
+
     return (
         <div className="h-fit">
             <div id="mapcont">
+                <div id='floating'>
+                    <Link href='/driver_home'>
+                        <Image id='back' src={back}/>
+                    </Link>
+                    <div className="grid place-items-center w-[75%]">
+                        <div id="orderfloat">
+                            <div id="orderno">
+                                <h3 className="font-semibold">Order</h3>
+                                <h3>&#183;</h3>
+                                <h3 className="text-[#666666]">B-005</h3>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
                 <Maps/>
             </div>
 
@@ -51,13 +72,18 @@ export default function order() {
                         <h2 className='text-xs grid items-center text-[#666666]'>for Katarina</h2>
                     </div>
 
+
                     <div className='space-y-7'>
-                        {orders.map((e) => (
+                        {/* {orders.map((e) => (
                             <div className='font-semibold space-y-2 text-sm'>
                                 <h1 className="text-[#333333]">{e.menu}</h1>
                                 <h2 className='text-[#666666]'>{e.price}</h2>
                             </div>
-                        ))}
+                        ))} */}
+                        <div className='font-semibold space-y-2 text-sm'>
+                                <h1 className="text-[#333333]">{name}</h1>
+                                <h2 className='text-[#666666]'>{merchantName}</h2>
+                        </div>
                     </div>
                 </div> 
 
