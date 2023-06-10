@@ -1,18 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Maps from '@/components/map'
 import Image from "next/image";
 import msg from '../images/msg.jpg'
 import back from '../images/back.png'
 
-import { GetOrders } from "./api/track/getItems";
+import { PrismaClient, Item, Prisma } from '@prisma/client'
 
-export default function Order(props) {
+import { getOrders } from "./api/orders";
 
-    const[name, merchantName] = props;
+const prisma = new PrismaClient()
+export async function getStaticProps() {
+    const orders = await prisma.order.findMany()
+    return {
+        props: {
+            customerOrder: orders
+        }
+    }
+}
 
+export default function Order({customerOrder}) {
+    const [orders, setOrders] = useState(customerOrder)
     const [selected, setSelected] = useState(undefined);
-
     const buttonHandler = (e, id) => {
       e.currentTarget.classList.toggle("active");
       if (id !== selected) {
@@ -80,10 +89,12 @@ export default function Order(props) {
                                 <h2 className='text-[#666666]'>{e.price}</h2>
                             </div>
                         ))} */}
-                        <div className='font-semibold space-y-2 text-sm'>
-                                <h1 className="text-[#333333]">{name}</h1>
-                                <h2 className='text-[#666666]'>{merchantName}</h2>
-                        </div>
+                        {orders?.map((e) => (
+                            <div className='font-semibold space-y-2 text-sm'>
+                                <h1 className="text-[#333333]">{e}</h1>
+                                {/* <h2 className='text-[#666666]'>{e.price}</h2> */}
+                            </div>
+                        ))}
                     </div>
                 </div> 
 
@@ -139,7 +150,7 @@ export default function Order(props) {
 
 const progress = [{id: 1, label: 'Received', button: 'Processing'}, {id: 2, label: 'Processing', button: 'On Delivery'}, {id: 3, label: 'On Delivery', button: "Waiting for customer's confirmation"}]
 
-const orders = [
-    {menu: '[PinkFong] Chicken Japchae - MPASI', price: '53.280'},
-    {menu: 'Japanese Beef Curry Udon - MPASI', price: '53.280'}
-]
+// const orders = [
+//     {menu: '[PinkFong] Chicken Japchae - MPASI', price: '53.280'},
+//     {menu: 'Japanese Beef Curry Udon - MPASI', price: '53.280'}
+// ]
