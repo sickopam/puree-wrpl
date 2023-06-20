@@ -5,33 +5,16 @@ import Image from "next/image";
 import msg from '../images/msg.jpg'
 import back from '../images/back.png'
 
-import { PrismaClient, Item, Prisma } from '@prisma/client'
-
 import { getOrders } from "./api/orders";
+import OrderPage from "../components/orderFetch";
 
-const prisma = new PrismaClient()
-export async function getStaticProps() {
-    const orders = await prisma.order.findMany()
-    return {
-        props: {
-            customerOrder: orders
-        }
-    }
-}
 
-export default function Order({customerOrder}) {
-    const [orders, setOrders] = useState(customerOrder)
+export default function Order() {
+
     const [selected, setSelected] = useState(undefined);
     const buttonHandler = (e, id) => {
       e.currentTarget.classList.toggle("active");
       if (id !== selected) {
-        // const button = document.querySelectorAll("#progress_bar");
-        // button.forEach((btn, index) => {
-        //   if (index !== i) {
-        //     btn.classList.add("active");
-        //     console.log(index)
-        //   }
-        // });
         setSelected(id);
       } else {
         const button = document.querySelectorAll("#progress_bar");
@@ -71,7 +54,7 @@ export default function Order({customerOrder}) {
                 <div className="flex justify-center pt-3">
                     <div id="puller"/>
                 </div>
-                <div id='order-summary' className='space-y-7'>
+                <div id='order-summary' className='space-y-4'>
                     <div className='inline-flex gap-1'>
                         <div className="inline-flex gap-2">
                             <h1 className='text-lg font-semibold'>Order</h1>
@@ -82,19 +65,8 @@ export default function Order({customerOrder}) {
                     </div>
 
 
-                    <div className='space-y-7'>
-                        {/* {orders.map((e) => (
-                            <div className='font-semibold space-y-2 text-sm'>
-                                <h1 className="text-[#333333]">{e.menu}</h1>
-                                <h2 className='text-[#666666]'>{e.price}</h2>
-                            </div>
-                        ))} */}
-                        {orders?.map((e) => (
-                            <div className='font-semibold space-y-2 text-sm'>
-                                <h1 className="text-[#333333]">{e}</h1>
-                                {/* <h2 className='text-[#666666]'>{e.price}</h2> */}
-                            </div>
-                        ))}
+                    <div>
+                        <OrderPage/>
                     </div>
                 </div> 
 
@@ -102,7 +74,7 @@ export default function Order({customerOrder}) {
                 <div id='order-summary' className='flex justify-between text-xs text-[#666666] font-semibold'>
                     <h2>Subtotal</h2>
                     <div>
-                        <h3 className="text-right">106.560</h3>
+                        <h3 className="text-right">88.000</h3>
                         <div className="text-2xs font-light inline-flex">
                             <h4>Paid with <a className="font-semibold">PureePay</a></h4>
                         </div>
@@ -149,8 +121,3 @@ export default function Order({customerOrder}) {
 }
 
 const progress = [{id: 1, label: 'Received', button: 'Processing'}, {id: 2, label: 'Processing', button: 'On Delivery'}, {id: 3, label: 'On Delivery', button: "Waiting for customer's confirmation"}]
-
-// const orders = [
-//     {menu: '[PinkFong] Chicken Japchae - MPASI', price: '53.280'},
-//     {menu: 'Japanese Beef Curry Udon - MPASI', price: '53.280'}
-// ]
