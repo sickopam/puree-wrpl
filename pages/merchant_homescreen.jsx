@@ -43,9 +43,9 @@ export default function MerchantHomescreen() {
         </div>
 
         <div className='mt-9 mx-9 grid grid-cols-4 gap-x-7'>
-            <div className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border'>
+            <Link className=' rounded-lg-xl bg-white h-14 w-14 drop-shadow-lg box-border' href='/orders-today'>
                 <Image src={orders} className='mx-auto mt-2'/>
-            </div>
+            </Link>
             <div>
                 <Link href='/menu_page'>
                     <button>

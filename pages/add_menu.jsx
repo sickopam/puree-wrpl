@@ -59,7 +59,7 @@ export default function AddMenu() {
             <input required type='text' className='mt-1 rounded-lg w-80 h-12 border-solid border border-gray-500 bg-whites'/>
        </div>
 
-        <Link href='/menu_page'>
+        <Link href='/menu_page2'>
             <button className='ml-8 mt-20 rounded-lg w-80 h-12 bg-yellow-400'>
                 <p className='text-white'>Save Menu</p>
             </button>

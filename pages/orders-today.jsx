@@ -29,6 +29,17 @@ export default function orderToday() {
                     <div className="flex justify-around mb-5">
                         <div className="">
                             <p className="text-[14px] text-gray-800 font-semibold">B-006</p>
+                            <p className="text-[12px] text-gray-600">1 item for Katarina</p>
+                        </div>
+
+                        <div className="bg-yellow-400 w-[130px] h-[30px] rounded-xl ml-16">
+                            <p className="text-[12px] flex justify-center font-semibold text-white p-1.5">Received</p>
+                        </div>
+                    </div>
+
+                    <div className="flex justify-around my-5 pt-5">
+                        <div className="">
+                            <p className="text-[14px] text-gray-800 font-semibold">B-007</p>
                             <p className="text-[12px] text-gray-600">4 items for Bening</p>
                         </div>
 
@@ -39,8 +50,8 @@ export default function orderToday() {
 
                     <div className="flex justify-around my-5 pt-5">
                         <div className="">
-                            <p className="text-[14px] text-gray-800 font-semibold">B-006</p>
-                            <p className="text-[12px] text-gray-600">4 items for Bening</p>
+                            <p className="text-[14px] text-gray-800 font-semibold">B-008</p>
+                            <p className="text-[12px] text-gray-600">2 items for Vania</p>
                         </div>
 
                         <div className="bg-yellow-400 w-[130px] h-[30px] rounded-xl ml-16">
@@ -50,19 +61,8 @@ export default function orderToday() {
 
                     <div className="flex justify-around my-5 pt-5">
                         <div className="">
-                            <p className="text-[14px] text-gray-800 font-semibold">B-006</p>
-                            <p className="text-[12px] text-gray-600">4 items for Bening</p>
-                        </div>
-
-                        <div className="bg-yellow-400 w-[130px] h-[30px] rounded-xl ml-16">
-                            <p className="text-[12px] flex justify-center font-semibold text-white p-1.5">Received</p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-around my-5 pt-5">
-                        <div className="">
-                            <p className="text-[14px] text-gray-800 font-semibold">B-006</p>
-                            <p className="text-[12px] text-gray-600">4 items for Bening</p>
+                            <p className="text-[14px] text-gray-800 font-semibold">B-0009</p>
+                            <p className="text-[12px] text-gray-600">7 items for Opam</p>
                         </div>
 
                         <div className="bg-yellow-400 w-[130px] h-[30px] rounded-xl ml-16">

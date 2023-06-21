@@ -30,56 +30,42 @@ export default function orderHistory() {
                     <div className="flex mb-5">
                         <div className="">
                             <p className="text-[14px] text-gray-800 font-semibold">A-006</p>
-                            <p className="text-[12px] text-gray-600">4 items for Bening</p>
+                            <p className="text-[12px] text-gray-600">4 items for Ezra H</p>
                         </div>
 
                         <div className="text-[12px] ml-36">
                             <p className="">213.120</p>
                             <div className="flex mt-1">
                                 <Image src={star} className="w-[16px] h-[16px]"></Image>
-                                <p className="ml-1">4</p>
+                                <p className="ml-1">5</p>
                             </div>
                         </div>
                     </div>
 
+
                     <div className="flex mb-5 pt-5">
                         <div className="">
-                            <p className="text-[14px] text-gray-800 font-semibold">A-006</p>
-                            <p className="text-[12px] text-gray-600">4 items for Bening</p>
+                            <p className="text-[14px] text-gray-800 font-semibold">A-007</p>
+                            <p className="text-[12px] text-gray-600">1 item for Filiapon</p>
                         </div>
 
                         <div className="text-[12px] ml-36">
-                            <p className="">213.120</p>
+                            <p className="">30.500</p>
                             <div className="flex mt-1">
                                 <Image src={star} className="w-[16px] h-[16px]"></Image>
-                                <p className="ml-1">4</p>
+                                <p className="ml-1">3.5</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="flex mb-5 pt-5">
                         <div className="">
-                            <p className="text-[14px] text-gray-800 font-semibold">A-006</p>
-                            <p className="text-[12px] text-gray-600">4 items for Bening</p>
+                            <p className="text-[14px] text-gray-800 font-semibold">A-008</p>
+                            <p className="text-[12px] text-gray-600">2 items for Bening</p>
                         </div>
 
                         <div className="text-[12px] ml-36">
-                            <p className="">213.120</p>
-                            <div className="flex mt-1">
-                                <Image src={star} className="w-[16px] h-[16px]"></Image>
-                                <p className="ml-1">4</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex mb-5 pt-5">
-                        <div className="">
-                            <p className="text-[14px] text-gray-800 font-semibold">A-006</p>
-                            <p className="text-[12px] text-gray-600">4 items for Bening</p>
-                        </div>
-
-                        <div className="text-[12px] ml-36">
-                            <p className="">213.120</p>
+                            <p className="">70.000</p>
                             <div className="flex mt-1">
                                 <Image src={star} className="w-[16px] h-[16px]"></Image>
                                 <p className="ml-1">4</p>

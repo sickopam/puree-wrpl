@@ -19,7 +19,7 @@ export default function Merch() {
                     <Image className='h-1/2' src={Logo}></Image>
                 </div>
                 <div className='grid space-y-5'>
-                    <Link href='/login_landing'>
+                    <Link href='/merchant_setup_satu'>
                         <button className='button grid place-items-center'>
                             <h1 className='font-bold text-white'>Register with email</h1>
                         </button>

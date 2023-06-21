@@ -16,6 +16,7 @@ import home from '../images/home.jpg'
 import profile2 from '../images/profile-picture.png'
 import message from '../images/message.jpeg'
 import notif from '../images/notif.jpeg'
+import addphoto from '../images/add-photo.png'
 
 export default function Menu_Page() {
     const [menuVisible, setMenuVisible] = useState(false)
@@ -75,11 +76,16 @@ export default function Menu_Page() {
                     <p className='mt-4 text-sm font-medium'>Avocado Purée</p>
                     <p className='text-sm font-semibold'>53.280</p>
                 </div>
-                {/* <div>
-                    <Image src={alpukat} className='w-32'></Image>
+                <div>
+                    <Image src={blueberry} className='w-32'></Image>
                     <p className='mt-4 text-sm font-medium'>Avocado Purée</p>
                     <p className='text-sm font-semibold'>53.280</p>
-                </div> */}
+                </div>
+                <div>
+                    <Image src={addphoto} className='w-32'></Image>
+                    <p className='mt-4 text-sm font-medium'>Blueberry Muffin</p>
+                    <p className='text-sm font-semibold'>20.500</p>
+                </div>
             </div>
 
             <div className='fixed bottom-32 right-9'>
