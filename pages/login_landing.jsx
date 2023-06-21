@@ -19,7 +19,7 @@ export default function Logland() {
                 <div className='grid space-y-5'>
                     <Link href='/driver_setup_satu'>
                         <button className='button grid place-items-center'>
-                            <h1 className='font-bold text-white'>Here to buy</h1>
+                            <h1 className='font-bold text-white'>Here to drive</h1>
                         </button>
                     </Link>
                     <button className='button2 grid place-items-center'>
