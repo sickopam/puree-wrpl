@@ -61,15 +61,16 @@ export default function DriverSet1() {
                   requiredclasses="[A-Z] [a-z] [0-9] [+_%@!$*~-]"
                   requiredclasscount="3"
                   disallowedwords="{{username}}"
+                  placeholder='********'
                   onChange={e => setPassword(e.target.value)} 
                   value={password} 
                   />
                         
                 <p className=''>Confirm Password</p>
-                <input type='password' id ='input-satu' required/>
+                <input type='password' placeholder='********' id ='input-satu' required/>
 
                 <div className='h-full flex justify-center'>
-                  <Link href='/user_setup_dua'>
+                  <Link href='/driver_setup_dua'>
                     <button id='next-button' className='grid place-items-center mt-5'
                     disabled={!email || !phoneNumber || !password} type="submit" value="Next" onClick={submitData}>
                       <p id='next'>Next</p>
