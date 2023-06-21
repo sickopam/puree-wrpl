@@ -17,7 +17,7 @@ export default function Logland() {
             <div className='space-y-10'>
                 <Image src={Logo}></Image>
                 <div className='grid space-y-5'>
-                    <Link href='/merchant_log'>
+                    <Link href='/driver_setup_satu'>
                         <button className='button grid place-items-center'>
                             <h1 className='font-bold text-white'>Here to buy</h1>
                         </button>
